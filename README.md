@@ -15,7 +15,7 @@ See deployment for notes on how to deploy the project on a live system.
 1. Clone the repo
 
    ```shell
-   git clone git@github.com:itk-dev/certificate-locator.git
+   git clone git@github.com:itk-dev/print-service.git
    ```
 
 2. Pull docker images and start docker containers
@@ -30,3 +30,31 @@ See deployment for notes on how to deploy the project on a live system.
    ```shell
    docker-compose exec phpfpm composer install
    ```
+
+### Unit tests
+
+```shell
+docker-compose exec phpfpm vendor/bin/phpunit
+```
+
+### Coding standards
+
+```shell
+docker-compose exec phpfpm vendor/bin/php-cs-fixer fix --dry-run
+```
+
+## Deployment
+
+```shell
+composer require itk-dev/certificate-locator
+```
+
+## Versioning
+
+We use [SemVer](http://semver.org/) for versioning. For the versions available,
+see the [tags on this repository](https://github.com/itk-dev/certificate-locator/tags).
+
+## License
+
+This project is licensed under the MIT License - see the
+[LICENSE.md](LICENSE.md) file for details
