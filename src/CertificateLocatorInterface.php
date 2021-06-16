@@ -2,7 +2,7 @@
 
 namespace ItkDev\CertificateLocator;
 
-use ItkDev\Serviceplatformen\Certificate\Exception\CertificateLocatorException;
+use ItkDev\CertificateLocator\Exception\CertificateLocatorException;
 
 /**
  * Interface CertificateLocatorInterface
