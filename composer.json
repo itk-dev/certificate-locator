@@ -1,0 +1,6 @@
+{
+    "name": "itk-dev/certificate-locator",
+    "type": "library",
+    "license": "MIT",
+    "require": {}
+}
